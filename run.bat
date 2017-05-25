@@ -1,0 +1,1 @@
+C:\jdk1.6.0_07\bin\java -classpath .;jmxtools.jar KlasaAplikacije

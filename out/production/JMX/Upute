@@ -1,0 +1,23 @@
+Znaci moje su klase Main koja je glavna i nju pokreces.
+StockExchange je MBean objekt kojeg je bilo potrebno napravit.
+U njemu se nalaze atributi(stock exchange varijable) i operacije (vidi StockExchangeMBean) i notifikacija(na dnu je)
+
+Kad pokrenes main klasu otvoris localhost:8080
+U njemu imas na pocetnoj stranici:
+-Adapter koji sam napravio u main klasi. Imas init adapter dio.
+-StockExchangeMBean objekt, objekt cije stanje promatras
+
+Klikni na njega:
+U njemu imas:
+    - uz ove random gluposti koje imaju i oni kao sto su cpuBoundInstruction, cpuBusyTime, cpuTime itd..
+    -i stvari koje sam definirao custom za nas stock exchange objekt
+    -to su currentFreeStockAmount= broj koliko je ostalo slobodnih dionica na burzi koje mozes kupit
+    -currentMoney -  novac kojeg imas i s kojim mozes kupovat dionice
+    -currentStockValue = trenutna vrijednost 1 dionice, njena vrijednost se mijenja svake 2 sekunde (vidi run metodu u StockExchange klasi)
+    -initialMoney = pocetni novac kojeg imas kad dodes na burzu
+    -MyCurrentStocksAmount = broj dionica kojih imas na burzi
+    -na dnu imas dvije operacije buy i sell. Kad upises broj, pozovu se metode u StockExchange klasi i ako mozes onda se obave.
+    tj ako imas dovoljno para, ako je ostalo dovoljno slobodnih dionica itd.. ako nije onda ce ti se u konzoli ispisat zasto nisi kupio
+    - u svakom slucaju stranica ce se osvjezit kao da je sve oke (nemam veze s tim) i kliknes da se vrati nazad i imat ces trenutno stanje svega.
+
+    Na vrhu jos ima reload dugmic kojeg kad kliknes ti osvjezi sva stanja, a ugl ce te zanimat currentStockValue
